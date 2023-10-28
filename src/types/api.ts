@@ -1,11 +1,4 @@
-export interface Root {
-  count: number;
-  next: string;
-  previous: string;
-  results: Result[];
-}
-
-export interface Result {
+export interface Icharacter {
   name: string;
   height: string;
   mass: string;
@@ -16,7 +9,7 @@ export interface Result {
   gender: string;
   homeworld: string;
   films: string[];
-  species: string[];
+  species: null | string[];
   vehicles: string[];
   starships: string[];
   created: string;
